@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+./configure --prefix=/usr \
+	--sysconfdir=/etc/zsh \
+	--enable-etcdir=/etc/zsh
+make
+make DESTDIR="$1" install
