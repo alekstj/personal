@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+find . -name '*.ttf' -exec install -Dm644 -v -t $1/usr/share/fonts/TTF/ {} \;
+find . -name '*.conf' -exec install -Dm644 -v -t $1/usr/share/fontconfig/conf.avail/ {} \;
