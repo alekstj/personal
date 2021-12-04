@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+mkdir build && cd build
+
+meson --prefix=/usr ..
+
+ninja
+ninja install

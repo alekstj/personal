@@ -1,0 +1,5 @@
+wayland
+gtk+3
+pkgconf build
+meson build
+samurai build
